@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpSuccess">
+
+    <TextView
+        android:id="@+id/emailtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email should be here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <TextView
+        android:id="@+id/memberFeeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="member fee here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtextView"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <EditText
+        android:id="@+id/creditCardNumEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="CardNumber"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memberFeeTextView"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <EditText
+        android:id="@+id/CardExpiraryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Expiary Date eg.101019"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creditCardNumEditText"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <TextView
+        android:id="@+id/MemberFeeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Member Fee   €"
+        app:layout_constraintBottom_toBottomOf="@+id/memberFeeTextView"
+        app:layout_constraintEnd_toStartOf="@+id/memberFeeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/memberFeeTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
